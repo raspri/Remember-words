@@ -10,7 +10,7 @@ body {
 
 }
 
-header {
+header, footer {
     text-align: center;
 
     background-color: rgb(0, 0, 0, 0.6);
@@ -21,6 +21,18 @@ header {
 
 nav {
     text-align: center;
+    margin: 5px;
+}
+
+article {
+    border: 5px solid white;
+    border-radius: 20px;
+
+    padding: 5%;
+    margin: 2% 10%;
+    width: 70%;
+
+    background-color: rgb(0, 0, 0, 0.6);
 }
 
 a {
@@ -46,36 +58,37 @@ h2 {
     margin-left: 2em;
 }
 
-section {
+.part-of-speech {
     border: 5px solid white;
     border-radius: 20px;
 
     margin: 2% 10%;
-    width: 50%;
+    width: 40%;
 
     background-color: rgb(0, 0, 0, 0.6);
 }
 
 dl {
     display: none;
+
+    text-align: center;
 }
 
-section:hover {
+.part-of-speech:hover {
     border-color: #bbbbff;
 }
 
-section:hover dl {
+.part-of-speech:hover dl {
     display: block;
 }
 
-section:hover h2 {
+.part-of-speech:hover h2 {
     color: #bbbbff;
     text-decoration: underline;
     font-style: italic;
 }
 
 dt {
-    font-family: "Helvetica", "Arial", sans-serif;
     font-weight: bold;
     font-size: 1.2em;
 }
@@ -86,18 +99,16 @@ dd {
     color: #bbbbff;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
-
-    margin-bottom: 20px;
 }
 
 .word {
     width: 50%;
-    margin: 10px 0;
+    margin-bottom: 10px; 
     padding: 5px;
 
     text-align: center;
 
-    border: 2px solid white;
+    border: 3px solid white;
     border-radius: 10px;
 }
 
@@ -119,11 +130,24 @@ dd {
 
 .word:hover {
     border-color: #bbbbff;
-    border-width: 3px;
 }
 
 .word:hover dt {
     color: #bbbbff;
     text-decoration: underline;
-
 } 
+
+.hidden {
+    font-style: italic;
+
+    display: none;
+}
+
+.press:hover {
+    color: #bbbbff;
+    text-decoration: underline;
+}
+
+.press:active .hidden {
+    display: inline;
+}
