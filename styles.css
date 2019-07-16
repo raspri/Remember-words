@@ -58,7 +58,7 @@ h2 {
     margin-left: 2em;
 }
 
-.part-of-speech {
+.words-section {
     border: 5px solid white;
     border-radius: 20px;
 
@@ -74,15 +74,15 @@ dl {
     text-align: center;
 }
 
-.part-of-speech:hover {
+.words-section:hover {
     border-color: #bbbbff;
 }
 
-.part-of-speech:hover dl {
+.words-section:hover dl {
     display: block;
 }
 
-.part-of-speech:hover h2 {
+.words-section:hover h2 {
     color: #bbbbff;
     text-decoration: underline;
     font-style: italic;
@@ -97,7 +97,7 @@ dd {
     display: none;
 
     color: #bbbbff;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "American Typewriter", serif;
     font-style: italic;
 }
 
@@ -112,7 +112,7 @@ dd {
     border-radius: 10px;
 }
 
-.verbs, .adjectives {
+.verbs, .adjectives, .expressions {
     float: left;
 
     padding-left: 5%;
